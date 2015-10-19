@@ -35,17 +35,17 @@
 \vspace{-3mm}
 \begin{itemize}
     % Supermixer
-    \item Maintained the Supermixer, a central routing and management service
-      that connects all ad services (e.g. AdWords, DoubleClick) together, making
-      it one of the highest traffic services that Google deploys.
+    \item Maintained a critical Display Ads binary, a service that coordinates
+      the ad serving system for AdSense and DoubleClick. It is one of the
+      highest traffic services that Google deploys.
     % Release improvements
-    \item Improved the Supermixer release process; designed a binary to detect
-      configuration changes between redeployments, and simplified 10+
-      release workflows.
+    \item Improved release processes; designed and implemented a tool to detect
+      configuration changes between redeployments, and consolidated over 20
+      automated release tasks.
     % Targeting
-    \item Migrated the routing code path from a state machine-based execution
-        workflow to a dependency graph-based workflow, improving its
-        multi-threading ability.
+    \item Migrated a critical code path from a state-machine based design to a
+      patented \href{http://www.google.com/patents/US8191052}
+      {\uline {Producer Graph}} design, enabling multi-threading support.
 \end{itemize}
 
 \vspace{-1.5mm}
