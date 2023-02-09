@@ -1,5 +1,5 @@
 \documentclass{letter}
-\usepackage[margin=1in]{geometry}
+\usepackage[vmargin=0.8in, hmargin=1in]{geometry}
 \usepackage[normalem]{ulem}
 \usepackage[colorlinks = true,
             linkcolor = blue,
@@ -9,11 +9,17 @@
 \begin{document}
   \thispagestyle{empty}
 
-
-{\bfseries
-  {\Large Jerry Jiang} \hfill \href{mailto:jerry@tpcstld.me}{\uline{jerry}}@\href{http://tpcstld.me}{\uline{tpcstld.me}} \\
+\begin{bfseries}
+\begin{minipage}{0.5\textwidth}
+{\Huge Jerry Jiang}
+\end{minipage}
+\begin{minipage}{\dimexpr 0.5\textwidth-2pt}
+  \vspace{2mm}
+  \null \hfill {\href{mailto:jerry@tpcstld.me}{\uline{jerry}}@\href{http://tpcstld.me}{\uline{tpcstld.me}} \\
   \null \hfill (650) 666-7996 \\
-\null \hfill \href{https://github.com/tpcstld}{\uline{github.com/tpcstld}}}
+  \null \hfill \href{https://github.com/tpcstld}{\uline{github.com/tpcstld}}}
+\end{minipage}
+\end{bfseries}
 
 {\bfseries \Large Technical Qualifications}
 
@@ -39,16 +45,17 @@
 \vspace{-1.5mm}
 {\bfseries \href{https://discord.com}{\uline{Discord}}} -- San Francisco,
 California \hfill March 2020 -- Current \\
-{\bfseries Software Engineer -- Product}
+{\bfseries Staff Software Engineer -- Product}
 \vspace{-3mm}
 \begin{itemize}
-  \item Maintained Discord's marketing pages; implemented a complete redesign for Discord's repositioning.
+  \item Shipped many product features including Server Video, Stage Channels, Events, and Student Hubs.
   \item Overhauled login and registration to support phone numbers, increasing registrations by 10+\%.
+  \item Improved React Native Android startup TTI by 20\% via improved cache deserialization.
 \end{itemize}
 
 \vspace{-1.5mm}
 {\bfseries \href{http://facebook.com}{\uline{Facebook}}} -- Menlo Park,
-California \hfill July 2018 -- Current \\
+California \hfill July 2018 -- March 2020 \\
 {\bfseries Software Engineer -- Data Platform}
 \vspace{-3mm}
 \begin{itemize}
@@ -143,7 +150,7 @@ California \hfill May 2016 -- August 2016\\
 \vspace{-3mm}
 \begin{itemize}
     \item A port of the 2048 puzzle game to Android.
-    \item Earned 3,200,000+ downloads, 4.6 stars with 15,000+ reviews on Google
+    \item Earned 5,000,000+ downloads, 4.5 stars with 28,000+ reviews on Google
       Play.
 \end{itemize}
 
